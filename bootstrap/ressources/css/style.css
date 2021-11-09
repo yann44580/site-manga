@@ -173,6 +173,8 @@ p {
 
 
 .type {
+    width: 416;
+    height: 370;
     background-color: white;
     padding: 30px 40px;
     border-radius: 10px;
@@ -182,7 +184,7 @@ p {
 
 .type img {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 100%;
 }
 
