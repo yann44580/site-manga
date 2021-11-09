@@ -1,0 +1,385 @@
+/* DOCUMENT INFORMATION
+    -document: manga
+    -Version:1.0.0
+
+*/
+
+/*COLOR
+    - defaut body text #eee
+    - h1
+    - h2
+    - h3
+
+    - button
+    - button: hover
+
+    - border
+
+*/
+
+/* FONTS
+    - default
+    -subtitle
+
+*/
+
+/*CSS DIRECTORY
+    1.GLOBAL
+    2.HEADER
+    3.PRODUITS
+
+*/
+
+/*GLOBAL
+=======================================================*/
+
+html {
+    background-color: WHITE;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Anime Ace', arial;
+    letter-spacing: 1px;
+    word-spacing: 7px;
+}
+
+h1 {
+    color: rgb(88, 76, 76);
+}
+
+h2 {
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: rgb(202, 58, 58);
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+P {}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+@font-face{
+    font-family: manga;
+    src: url(C:\Users\Apprenant\OneDrive\Bureau\bootstrap\Manga Italic.otf);
+}
+
+/*header
+=======================================================*/
+
+header {
+    background-image: linear-gradient(120deg, rgba(39, 168, 245, 0.5), rgba(246, 161, 88, 0.3)), url(../image/manga.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home_title {
+    position: absolute;
+    top: 30%;
+    left: 130px;
+}
+
+.home_title h1 {
+    font-size: 350%;
+    color: rgb(202, 58, 58);
+
+}
+
+.home_title p {
+    color: rgb(248, 239, 239);
+}
+
+.btn {
+    display: flexbox;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border 1s;
+}
+
+.btn_full {
+    background-color: rgb(248, 241, 135);
+    color: tomato;
+}
+
+.btn_ghost {
+    border: 1px solid black;
+    color: tomato;
+}
+
+.btn_full:hover {
+    background-color: rgb(236, 43, 43);
+    color: white;
+}
+
+.btn_ghost:hover {
+    background-color: rgb(236, 43, 43);
+    border: 1px solid rgb(236, 43, 43);
+    color: white;
+}
+
+
+/*produit
+=======================================================*/
+.produit_plus {
+    margin: 20px 0;
+}
+
+.produit_icone:hover {
+    color: yellow;
+    transform: translateX(20px)
+}
+
+.produit_img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produit_icone {
+    font-size: 40px;
+    color: rgb(228, 27, 111);
+    transition: all 1s;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+p {
+    font-size: 12px;
+
+}
+
+/* type manga============================================*/
+.manga {
+    background-color: rgb(209, 121, 106);
+}
+
+
+.type {
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+}
+
+.type img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.type h4 {
+    text-align: center;
+}
+
+/* gallerie photo============================================*/
+.galerie {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+}
+
+.galerie_titre {
+    position: relative;
+    top: 500px;
+    left: 20px;
+}
+
+.galerie_titre h4 {
+    color: rgb(146, 5, 5);
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+/*  clients ========================================================*/
+.clients {
+    background-image: url(../image/galerie/CouvStageManga.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    font-style: italic;
+}
+
+blockquote {
+    color: rgb(71, 7, 90);
+    font-family: manga;
+    font-weight: bold;
+}
+
+blockquote:before {
+    content: "\201C ";
+    font-size: 100px;
+    position: relative;
+    top: 20px;
+    left: 2px;
+    color: rgba(228, 38, 38, 0.6)
+}
+
+cite {
+    display: flexbox;
+    font-size: 90%;
+    margin-top: 20px;
+    margin-left: 130px;
+    font-size: 2rem;
+}
+
+cite img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/*  packs ========================================================*/
+.abonnement {
+    background-color: white;
+}
+
+.pack {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.pack h3 {
+    color: green;
+    font-weight: 400;
+}
+
+.pack h4 {
+    font-size: 200%;
+    font-weight: 100;
+}
+
+.pack p {
+    font-weight: 100;
+    font-size: 150%;
+}
+
+.pack span {
+    font-weight: 200;
+    font-size: 40%;
+    position: relative;
+    top: -8px;
+    left: 2px;
+}
+
+.pack-title {
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid black;
+}
+
+.pack-content ul {
+    list-style: none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.pack-content ul li i {
+    font-size: 90%;
+    margin-right: 10px;
+}
+
+.pack-signup {
+    text-align: center;
+}
+
+.btn-pack {
+    background-color: blueviolet;
+    margin-bottom: 20px;
+}
+
+.pack-premium {
+    background-color: rgb(182, 135, 226);
+}
+
+.pack .pack-title-premium {
+    font-size: 1rem;
+    text-align: center;
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: none;
+}
+
+.btn-pack:hover{
+    background-color:chocolate;
+    color: white;
+}
+
+/* Formulaire ======================================*/
+ 
+.contact-form{
+    margin-bottom: 30px;
+}
+
+.contact-message{
+    width: 100%;    
+}
+
+.btn-contact{
+    background-color: cornflowerblue;
+    color: rgb(5, 0, 77);
+    margin-left: 250px;
+}
+
+.map{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+
+.map iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+
+}
+
+/*  footer  ===========================================*/
+footer{
+    background-color: grey;
+    height: 60px;
+    color:white;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.copyright a{
+    color:blue
+}
